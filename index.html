@@ -1,0 +1,90 @@
+<style>body{width:60em; margin:2em auto;} h1,h2,h3,li{font-family: sans-serif;} li{margin:1em;} pre{margin:0; padding:1em; background:#e0e0e0; width:60em;}</style>
+<h1>Contest Documentation</h1>
+<h2>Languages and Standard Libraries</h2>
+<ul>
+<li><a href="c_cpp/en/index.html">C/C++</a></li>
+<li><a href="java/api/index.html">Java</a></li>
+<li><a href="python2/index.html">Python 2</a></li>
+<li><a href="python3/index.html">Python 3</a></li>
+</ul>
+<h2>Sample Code</h2>
+<h3>C</h3>
+
+<pre><code>#include &lt;stdio.h&gt;
+
+int main(void) {
+	// Read from stdin and parse the line
+	int a, b;
+	scanf("%d %d", &amp;a, &amp;b);
+	
+	// Write to stdout
+	printf("%d", a + b);
+	
+	return 0;
+}
+</code></pre>
+<h3>C++</h3>
+
+<pre><code>#include &lt;iostream&gt;
+
+using namespace std;
+
+int main() {
+	// Read from stdin and parse line
+	int a, b;
+	cin &gt;&gt; a &gt;&gt; b;
+
+	// Write to stdout
+	cout &lt;&lt; a + b &lt;&lt; endl;
+
+	return 0;
+}
+</code></pre>
+<h3>Java</h3>
+
+<pre><code>import java.io.*;
+import java.util.*;
+
+// If the class is public, its name should match the filename (e.g. "Program" in "Program.java")
+class Program {
+	public static void main(String[] args) throws Exception {
+		// Read from stdin
+		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+		String line = in.readLine();
+
+		// Parse the line
+		String[] lineParts = line.split(" ");
+		int a = Integer.parseInt(lineParts[0]);
+		int b = Integer.parseInt(lineParts[1]);
+
+		// Write to stdout
+		System.out.println(a + b);
+	}
+}
+</code></pre>
+<h3>Python 2</h3>
+
+<pre><code># Read from stdin
+line = raw_input()
+
+# Parse the line
+line_parts = line.split(" ")
+a = int(line_parts[0])
+b = int(line_parts[1])
+
+# Print to stdout
+print a + b
+</code></pre>
+<h3>Python 3</h3>
+
+<pre><code># Read from stdin
+line = input()
+
+# Parse the line
+line_parts = line.split(" ")
+a = int(line_parts[0])
+b = int(line_parts[1])
+
+# Print to stdout
+print(a + b)
+</code></pre>

@@ -1,0 +1,22 @@
+<h3>Java</h3>
+
+<pre><code>import java.io.*;
+import java.util.*;
+
+// If the class is public, its name should match the filename (e.g. "Program" in "Program.java")
+class Program {
+	public static void main(String[] args) throws Exception {
+		// Read from stdin
+		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+		String line = in.readLine();
+
+		// Parse the line
+		String[] lineParts = line.split(" ");
+		int a = Integer.parseInt(lineParts[0]);
+		int b = Integer.parseInt(lineParts[1]);
+
+		// Write to stdout
+		System.out.println(a + b);
+	}
+}
+</code></pre>
